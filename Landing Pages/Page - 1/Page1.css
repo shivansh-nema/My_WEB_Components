@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 350px;
+    height: 650px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.items:hover {
+    opacity: 1;
+    width: 850px;
+    box-shadow: 1px 1px 10px 3px rgb(252, 252, 174);
+    .para {
+        transition: all 1s ease-in-out 1.2s;
+        opacity: 1;
+    }
+
+    .heading {
+        transition: all 1s ease-in-out;
+        animation: anime1 1s ease-in-out 0.5s 1 forwards ;
+    }
+}
+
+.content {
+    border-radius: 20px;
+}
+
+#box1 {
+    background: url(../img1.jpg) no-repeat center center/cover;
+    
+}
+
+#box2 {
+    background: url(../img2.jpg) no-repeat center center/cover;
+}
+
+#box3 {
+    background: url(../img3.jpg) no-repeat center center/cover;
+}
+
+#box4 {
+    background: url(../img4.jpg) no-repeat center center/cover;
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes anime1 {
+    from{
+        top: 200px;
+        text-decoration: none;
+    }
+    
+    to {
+        top: 10px;
+        text-decoration: underline;
+    }
+}
+
+.para {
+    text-align: justify;
+    position: relative;
+    top: 5px;
+    margin: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    opacity: 0;
+}

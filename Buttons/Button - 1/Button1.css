@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+}
+
+#box {
+    display: flex;
+}
+
+.items {
+    margin: 100px;
+}
+
+.btn {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#item1 {
+    background-color: rgb(193, 197, 234);
+    transition: all 0.4s ease-in-out;
+}
+
+#item1:hover {
+    background-color: rgb(159, 165, 219);
+    width: 300px;
+    border-radius: 100px;
+}
+
+#item2 {
+    box-shadow: 0px 0px black;
+    background-color: rgb(242, 242, 174);
+    transition: all 0.4s ease-in-out;
+}
+
+#item2:hover {
+    background-color: rgb(222, 222, 139);
+    position: relative;
+    bottom: 10px;
+    box-shadow: 0px 10px black;
+}
+
+#item3 {
+    background-color: rgb(245, 193, 173);
+    transition: all 0.3s ease-in-out;
+}
+
+#item3:hover {
+    background-color: rgb(223, 162, 138);
+    width: 300px;
+    border-radius: 100px;
+    position: relative;
+    animation: anime1 0.45s ease-in-out 0.2s 1 forwards;
+}
+
+@keyframes anime1 {
+    from{
+        bottom: 0px;    
+    }
+    
+    to{
+        box-shadow: 0px 10px black;
+        bottom: 10px;
+    }
+}
